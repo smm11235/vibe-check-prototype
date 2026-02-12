@@ -327,7 +327,7 @@ html, body {
 .reveal-emoji { font-size: 56px; opacity: 0; }
 .reveal-name { font-family: 'Silkscreen', 'Courier New', monospace; font-size: 48px; line-height: 1.1; opacity: 0; }
 .reveal-hangout { font-size: 16px; color: var(--text-secondary); opacity: 0; }
-.reveal-tagline { font-family: 'RightGrotesk-Medium', 'Inter', sans-serif; font-size: 18px; color: var(--text-secondary); opacity: 0; margin-top: 4px; }
+.reveal-tagline { font-family: 'Space Grotesk', -apple-system, sans-serif; font-size: 18px; color: var(--text-secondary); opacity: 0; margin-top: 4px; }
 .reveal-btn { opacity: 0; margin-top: 24px; }
 
 .confetti-piece { position: absolute; width: 6px; height: 10px; border-radius: 2px; opacity: 0; }
@@ -351,7 +351,7 @@ html, body {
 }
 .archetype-badge {
     display: inline-block;
-    font-family: 'RightGrotesk-CompactBold', 'Inter', sans-serif;
+    font-family: 'Space Grotesk', -apple-system, sans-serif;
     font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em;
     padding: 4px 10px; border-radius: 6px; margin-bottom: 10px;
 }
@@ -364,7 +364,7 @@ html, body {
 
 /* DNA Bars */
 .section-title {
-    font-family: 'RightGrotesk-CompactBold', 'Inter', sans-serif;
+    font-family: 'Space Grotesk', -apple-system, sans-serif;
     font-size: 18px; color: var(--text-primary); margin-bottom: 4px;
 }
 .section-subtitle { font-size: 13px; color: var(--text-tertiary); margin-bottom: 16px; }
@@ -372,7 +372,7 @@ html, body {
 .dna-bars { display: flex; flex-direction: column; gap: 14px; }
 .dna-bar-row { display: flex; align-items: center; gap: 10px; }
 .dna-label {
-    font-family: 'RightGrotesk-Medium', 'Inter', sans-serif;
+    font-family: 'Space Grotesk', -apple-system, sans-serif;
     font-size: 13px; color: var(--text-secondary); min-width: 100px;
     display: flex; align-items: center; gap: 6px;
 }
@@ -383,7 +383,7 @@ html, body {
     font-size: 16px; min-width: 36px; text-align: right;
 }
 
-/* Karma / Levels */
+/* Karma */
 .karma-section { background: var(--bg-card); border-radius: 16px; padding: 20px; }
 .karma-total { font-family: 'Silkscreen', monospace; font-size: 24px; color: var(--accent-primary); margin-bottom: 14px; }
 .karma-rows { display: flex; flex-direction: column; gap: 10px; }
@@ -392,35 +392,6 @@ html, body {
 .karma-bonus {
     margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--bg-elevated);
     font-size: 13px; color: var(--accent-primary);
-}
-
-.level-bars { display: flex; flex-direction: column; gap: 12px; margin-top: 14px; }
-.level-row { display: flex; align-items: center; gap: 8px; }
-.level-label { font-size: 12px; color: var(--text-tertiary); min-width: 65px; }
-.level-track { flex: 1; height: 6px; background: var(--bg-elevated); border-radius: 3px; overflow: hidden; position: relative; }
-.level-fill { height: 100%; border-radius: 3px; width: 0%; transition: width 0.8s cubic-bezier(0, 0, 0.2, 1); }
-.level-info { font-size: 11px; color: var(--text-tertiary); min-width: 40px; text-align: right; }
-
-/* Level-up badge */
-.level-up-badge {
-    font-family: 'Silkscreen', monospace;
-    font-size: 11px;
-    background: var(--accent-primary);
-    color: var(--bg-primary);
-    padding: 2px 8px;
-    border-radius: 4px;
-    display: none;
-    opacity: 0;
-    animation: lvlPop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-}
-@keyframes lvlPop {
-    0% { opacity: 0; transform: scale(0); }
-    60% { opacity: 1; transform: scale(1.25); }
-    100% { opacity: 1; transform: scale(1); }
-}
-@keyframes barFlash {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.5; }
 }
 
 .results-cta { margin-top: 8px; width: 100%; display: flex; justify-content: center; }
@@ -433,8 +404,8 @@ html, body {
 }
 .prompt-inner { width: 100%; max-width: 390px; display: flex; flex-direction: column; gap: 16px; }
 .prompt-title {
-    font-family: 'RightGrotesk-CompactBold', 'Inter', sans-serif;
-    font-size: 24px; color: var(--accent-primary);
+    font-family: 'Space Grotesk', -apple-system, sans-serif;
+    font-size: 24px; color: var(--accent-primary); font-weight: 700;
 }
 .prompt-subtitle { font-size: 14px; color: var(--text-secondary); margin-top: -8px; }
 
@@ -464,7 +435,7 @@ html, body {
 }
 .photo-icon { font-size: 40px; }
 .photo-label {
-    font-family: 'RightGrotesk-Medium', 'Inter', sans-serif;
+    font-family: 'Space Grotesk', -apple-system, sans-serif;
     font-size: 16px; color: var(--text-primary);
 }
 .photo-sublabel { font-size: 13px; color: var(--text-tertiary); }
@@ -482,7 +453,7 @@ html, body {
 /* Prompt filter & list */
 .prompt-filter { display: flex; gap: 8px; flex-wrap: wrap; }
 .filter-chip {
-    font-family: 'RightGrotesk-Medium', 'Inter', sans-serif;
+    font-family: 'Space Grotesk', -apple-system, sans-serif;
     font-size: 13px; padding: 8px 14px; border-radius: 999px;
     border: 1.5px solid var(--bg-elevated); background: var(--bg-surface);
     color: var(--text-secondary); cursor: pointer; transition: all 0.2s ease;
@@ -493,7 +464,7 @@ html, body {
     display: flex; align-items: center; justify-content: space-between;
 }
 .prompt-section-title {
-    font-family: 'RightGrotesk-Medium', 'Inter', sans-serif;
+    font-family: 'Space Grotesk', -apple-system, sans-serif;
     font-size: 15px; color: var(--text-primary);
 }
 .prompt-section-badge {
@@ -517,7 +488,7 @@ html, body {
 .prompt-answer-input {
     background: var(--bg-card); border: 1.5px solid var(--bg-elevated); border-radius: 12px;
     padding: 14px 16px; color: var(--text-primary);
-    font-family: 'RightGrotesk-Regular', 'Inter', sans-serif; font-size: 15px;
+    font-family: 'Space Grotesk', -apple-system, sans-serif; font-size: 15px;
     resize: none; outline: none; min-height: 70px; -webkit-appearance: none;
 }
 .prompt-answer-input:focus { border-color: var(--accent-primary); }
@@ -544,7 +515,7 @@ html, body {
 /* ── Done Screen ── */
 #done-screen { z-index: 30; overflow-y: auto; -webkit-overflow-scrolling: touch; justify-content: flex-start; padding-top: calc(var(--safe-top) + 24px); }
 .done-inner { width: 100%; max-width: 390px; display: flex; flex-direction: column; align-items: center; gap: 16px; padding-bottom: 40px; }
-.done-title { font-family: 'RightGrotesk-CompactBold', 'Inter', sans-serif; font-size: 26px; color: var(--accent-primary); text-align: center; }
+.done-title { font-family: 'Space Grotesk', -apple-system, sans-serif; font-size: 26px; color: var(--accent-primary); text-align: center; }
 .done-subtitle { font-size: 14px; color: var(--text-secondary); text-align: center; }
 
 .done-prompt-card {
@@ -554,7 +525,7 @@ html, body {
 .done-prompt-img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; }
 .done-prompt-body { padding: 16px; }
 .done-prompt-label {
-    font-family: 'RightGrotesk-Medium', 'Inter', sans-serif;
+    font-family: 'Space Grotesk', -apple-system, sans-serif;
     font-size: 13px; color: var(--accent-primary); margin-bottom: 6px;
 }
 .done-prompt-text { font-size: 15px; color: var(--text-primary); line-height: 1.35; }
@@ -687,11 +658,14 @@ html, body {
     <div class="done-inner" id="doneContent"></div>
 </div>
 
+<script src="./assets/content.js"></script>
 <script>
 /* ============================
-   DATA
+   DATA (loaded from assets/content.js)
+   ARCHETYPES, PROMPTS, QUESTIONS
    ============================ */
 
+/*
 const ARCHETYPES = {
     pulse: { name:'The Pulse', emoji:'\u26A1', color:'#EC4899', hangout:'The Rooftop',
         tagline:'You bring the energy.',
@@ -1081,13 +1055,7 @@ const QUESTIONS = [
         optionB:{text:"\uD83C\uDFA8 Building worlds or making tier lists",archetype:"lore"}},
 ];
 
-const LEVELS = [
-    { level: 1, cumulative: 0 },
-    { level: 2, cumulative: 30 },
-    { level: 3, cumulative: 80 },
-    { level: 4, cumulative: 160 },
-    { level: 5, cumulative: 280 },
-];
+*/
 
 /* ============================
    STATE
@@ -1173,8 +1141,8 @@ function calculateProgress() {
         confidence = Math.sqrt(primaryRatio * secondaryRatio) * 0.70;
     }
     const raw = baseProgress + confidence;
-    // Minimum floor: ~2.5% per card so progress never stalls
-    const floor = Math.min(state.totalAsked * 0.025, 0.95);
+    // Minimum floor: ~2.5% per answered question (skips don't advance progress)
+    const floor = Math.min(state.questionsAnswered * 0.025, 0.95);
     return Math.min(Math.max(raw, floor), 0.99);
 }
 
@@ -1223,18 +1191,6 @@ function computeResults() {
     karma[primary] += bonusForPrimary;
     karma[primary] += (100 - Object.values(karma).reduce((a, b) => a + b, 0));
     return { mystery: false, primary, secondary, affinities, karma };
-}
-
-function getLevel(px) {
-    for (let i = LEVELS.length - 1; i >= 0; i--) { if (px >= LEVELS[i].cumulative) return LEVELS[i].level; }
-    return 1;
-}
-function getLevelProgress(px) {
-    const lvl = getLevel(px);
-    if (lvl >= 5) return { level:5, progress:1, display:'280/280' };
-    const current = LEVELS[lvl - 1].cumulative;
-    const next = LEVELS[lvl].cumulative;
-    return { level: lvl, progress: Math.min((px - current) / (next - current), 1), display: `${px}/${next}` };
 }
 
 /* ============================
@@ -1423,7 +1379,7 @@ function handleSkip() {
     state.questionsSkipped++;
     state.skipsPerArchetype[q.optionA.archetype] = (state.skipsPerArchetype[q.optionA.archetype] || 0) + 1;
     state.skipsPerArchetype[q.optionB.archetype] = (state.skipsPerArchetype[q.optionB.archetype] || 0) + 1;
-    updateProgress(false);
+    // No progress update on skip — progress only advances on answered questions
 }
 
 function nextCard() {
@@ -1561,7 +1517,7 @@ function showResults() {
     if (r.mystery) {
         container.innerHTML = `<div style="text-align:center;padding:40px 0">
             <div style="font-size:64px;margin-bottom:16px">\u2728</div>
-            <div style="font-family:'NeueBit-Bold',monospace;font-size:36px;color:var(--accent-primary);margin-bottom:8px">Mystery Vibe</div>
+            <div style="font-family:'Silkscreen',monospace;font-size:36px;color:var(--accent-primary);margin-bottom:8px">Mystery Vibe</div>
             <p style="color:var(--text-secondary);font-size:15px;line-height:1.4;margin-bottom:24px">You skipped everything \u2014 we can't read you, but that's kind of a flex.</p>
             <button class="btn-primary" onclick="location.reload()">Retake Quiz</button></div>`;
         return;
@@ -1597,20 +1553,7 @@ function showResults() {
         const a = ARCHETYPES[key];
         html += `<div class="karma-row"><span>${a.emoji} ${a.name}</span><span class="amount" style="color:${a.color}">+${r.karma[key]} px</span></div>`;
     }
-    html += `</div><div class="karma-bonus">\uD83C\uDF1F Primary Vibe Bonus: +20 px to ${primary.name}</div>`;
-
-    // Level bars with level-up badge slots
-    html += `<div class="level-bars">`;
-    for (const key of archetypeOrder) {
-        const a = ARCHETYPES[key];
-        const lp = getLevelProgress(r.karma[key]);
-        html += `<div class="level-row">
-            <span class="level-label">${a.emoji} Lv.${lp.level}</span>
-            <div class="level-track"><div class="level-fill" data-level-arch="${key}" style="background:${a.color}"></div></div>
-            <span class="level-info">${lp.display}</span>
-            <span class="level-up-badge" data-level-badge="${key}">LVL UP</span></div>`;
-    }
-    html += `</div></div>`;
+    html += `</div><div class="karma-bonus">\uD83C\uDF1F Primary Vibe Bonus: +20 px to ${primary.name}</div></div>`;
 
     // Skip advisory
     if (skipRate > 0.5) {
@@ -1629,31 +1572,6 @@ function showResults() {
             }, 200 * i);
         });
     }, 300);
-
-    // ── Animate level bars + level-up badges ──
-    setTimeout(() => {
-        archetypeOrder.forEach((key, i) => {
-            setTimeout(() => {
-                const lFill = document.querySelector(`.level-fill[data-level-arch="${key}"]`);
-                if (lFill) {
-                    const lp = getLevelProgress(r.karma[key]);
-                    lFill.style.width = (lp.progress * 100) + '%';
-
-                    // Show level-up badge if crossed level 2 threshold
-                    if (lp.level >= 2) {
-                        setTimeout(() => {
-                            const badge = document.querySelector(`.level-up-badge[data-level-badge="${key}"]`);
-                            if (badge) {
-                                badge.style.display = 'inline-block';
-                                // Also flash the bar
-                                lFill.style.animation = 'barFlash 0.4s ease 2';
-                            }
-                        }, 700);
-                    }
-                }
-            }, 300 * i);
-        });
-    }, 1400);
 
     document.getElementById('resultsCtaBtn').addEventListener('click', () => showPromptScreen());
 }
@@ -1804,13 +1722,8 @@ function showDone() {
     // For prototype: always show the cookie card
     const donePrompt = 'The meal I\u2019d cook to impress you';
     const doneText = 'Cookies can be a meal right?';
-    const doneBonus = 100; // +50 photo + +25 text = +75... but spec says "+100px for both"
+    const doneBonus = 100; // photo + caption
     state.promptBonus = doneBonus;
-
-    // Apply prompt bonus to primary archetype karma
-    const updatedKarma = {};
-    for (const key of archetypeOrder) updatedKarma[key] = r.karma[key];
-    if (r.primary) updatedKarma[r.primary] += doneBonus;
     const totalPx = 100 + doneBonus;
 
     let html = `
@@ -1828,37 +1741,19 @@ function showDone() {
 
         <div class="done-bonus-total">\u2728 ${totalPx} px earned total</div>`;
 
-    // Updated level bars with prompt bonus applied
-    html += `<div class="karma-section" style="width:100%"><div class="section-title">Updated Levels</div>
-        <div class="level-bars">`;
+    // Karma breakdown
+    html += `<div class="karma-section" style="width:100%"><div class="section-title">Your Karma</div>
+        <div class="karma-rows">`;
     for (const key of archetypeOrder) {
         const a = ARCHETYPES[key];
-        const lp = getLevelProgress(updatedKarma[key]);
-        html += `<div class="level-row">
-            <span class="level-label">${a.emoji} Lv.${lp.level}</span>
-            <div class="level-track"><div class="level-fill" data-done-level="${key}" style="background:${a.color}"></div></div>
-            <span class="level-info">${lp.display}</span>
-            ${lp.level >= 2 ? '<span class="level-up-badge" style="display:inline-block;opacity:1">LVL UP</span>' : ''}
-        </div>`;
+        const archKarma = r.karma[key] + (key === r.primary ? doneBonus : 0);
+        html += `<div class="karma-row"><span>${a.emoji} ${a.name}</span><span class="amount" style="color:${a.color}">${archKarma} px</span></div>`;
     }
     html += `</div></div>`;
 
     html += `<button class="btn-primary" style="margin-top:8px;width:100%" onclick="location.reload()">Explore Your Hangout</button>`;
 
     container.innerHTML = html;
-
-    // Animate level bars
-    setTimeout(() => {
-        archetypeOrder.forEach((key, i) => {
-            setTimeout(() => {
-                const fill = document.querySelector(`.level-fill[data-done-level="${key}"]`);
-                if (fill) {
-                    const lp = getLevelProgress(updatedKarma[key]);
-                    fill.style.width = (lp.progress * 100) + '%';
-                }
-            }, 200 * i);
-        });
-    }, 300);
 }
 
 /* ============================
